@@ -1,0 +1,142 @@
+:root {
+    --white: #fff;
+    --black: #000;
+    --gray: #c0c0c0;
+    --red: #e04e72;
+    --lred: #e090a4;
+}
+
+/*
+div {
+    border: 1px;
+    border-color: var(--black);
+    border-style: solid;
+}
+*/
+
+html,body {
+    margin: 0;
+    padding: 0;
+    font-family: "Protest Riot";
+    background-color: var(--gray);
+}
+.protest-riot-regular {
+    font-family: "Protest Riot", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+@media only screen and (min-width: 650px) {
+    .content {
+        width: 75%;
+    }
+
+    .row {
+        width: 75%;
+        margin: auto;
+
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    .content {
+        width: 55%;
+    }
+
+    .row {
+        width: 90%;
+        margin: auto;
+    }
+}
+
+.header {
+    background-image: url(./images/tausta44.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.header h1 {
+    font-size: 80px;
+    font-style: italic;
+    text-align: center;
+    font-family: "Protest Riot";
+    color: var(--gray);
+    padding: 50px 10px 50px 10px;
+    margin: 0;
+}
+
+ul {
+    background-color: var(--black);
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    list-style-type: none;
+}
+
+li {
+    float: left;
+}
+
+li a {
+display: block;
+color: var(--gray);
+text-align: center;
+padding: 14px 40px;
+text-decoration: none;
+}
+
+li a:hover:not(:active) {
+    background-color: var(--lred);
+}
+
+.active {
+    background-color: var(--red);
+}
+
+.player {
+    aspect-ratio: 16/9;
+    width: 100%;
+}
+
+.column {
+    float: left;
+    width: 45%;
+    padding-right: 5%;
+    font-size: 18px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.content {
+    color: var(--black);
+    width: 90%;
+    margin: auto;
+    font-size: 18px;
+}
+
+.content img {
+    width: 100%;
+    padding: 20px 0px 20px
+}
+
+.row {
+    width: 90%;
+    margin: auto;
+    font-size: 18px;
+}
+
+.footer {
+    background-color: var(--black);
+    margin-top: 40px;
+}
+
+.footer p {
+    font-family: "Protest Riot";
+    color: var(--gray);
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+}
